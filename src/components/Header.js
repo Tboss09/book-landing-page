@@ -1,19 +1,11 @@
-import logo from '../images/logo-bookmark.svg';
-import hamBurger from '../images/icon-hamburger.svg';
-
+import Nav from "./Nav";
+import Logo from "./Logo";
 const Header = () => {
     return (
-        <header className>
+        <header>
             <div className="header">
-                <div className="header__logo">
-                    <a href="/">
-                    <img src={logo} alt="" />
-                    </a>
-                </div>
-
-                <div className="header__nav">
-                    <img src={hamBurger} alt="nav menu" />
-                </div>
+                <Logo />
+                <Nav />
             </div>
         </header>
     )
