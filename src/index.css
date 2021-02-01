@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  border: 1.5px solid #5bc0de;
+  width: 30%;
+  margin: 20px auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  padding: 20px;
+}
+
+.header h4 {
+  font-weight: 500;
+
+}
+
+.btn {
+  outline: none;
+  padding: 10px 20px !important;
+  display: block;
+  font-family: inherit;
+  transform: scale(1);
+  transition: transform 0.4s;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active,
+input[type="submit"]:active {
+  transition: transform 0.4s;
+  transform: scale(0.90);
+}
+
+form {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.form-control {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 10px auto;
+}
+
+input {
+  margin-top: 5px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.849);
+  transition: border 0.3s;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+
+input:focus {
+  transition: border 0.4s;
+  border: 1px solid rgba(0, 0, 0, 0.239);
+}
+
+.form-control:nth-of-type(3) {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  align-items: center;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+}
+
+input[type="submit"] {
+  background: #000;
+  width: 100%;
+  color: #fff;
+  font-family: inherit;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  transform: scale(1);
+  transition: transform 0.4s;
+  cursor: pointer;
+}
+
+.tasks {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.tasks h3 {
+  font-weight: 500 !important;
+  font-size: 18px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task {
+  background: lightblue;
+  margin: 0 auto;
+  width: 80%;
+  text-align: left;
+  padding: 10px 20px;
+  margin-bottom: 12px;
+  position: relative;
+  border-radius: 3px;
+}
+
+
+.reminder::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  border-radius: 3px;
+  width: 8px;
+  top: 0%;
+  z-index: 1000;
+  left: 0%;
+  background: rgba(22, 22, 61, 0.452);
+}
+
+.task p {
+  font-size: 13px;
+}
+footer{
+  text-align: center;
+  text-transform: capitalize;
+}
