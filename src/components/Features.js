@@ -14,6 +14,7 @@ const Features = () => {
             </p>
 
                 <div className="features__tabs">
+                    ul.tabbed
                     <p className="features__tabs--text">Simple Bookmarking</p>
                     <p className="features__tabs--text">Speedy Searching</p>
                     <p className="features__tabs--text">Easy Sharing</p>
