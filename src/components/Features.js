@@ -1,6 +1,6 @@
-import TabletImage from '../images/illustration-hero.svg'
 
 const Features = () => {
+
     return (
         <>
 
@@ -13,23 +13,6 @@ const Features = () => {
                     so you can access them on the go.
             </p>
 
-                <div className="features__tabs">
-                    ul.tabbed
-                    <p className="features__tabs--text">Simple Bookmarking</p>
-                    <p className="features__tabs--text">Speedy Searching</p>
-                    <p className="features__tabs--text">Easy Sharing</p>
-                </div>
-
-
-
-                <div className="features__tabs two">
-                    <h1 className="features__header">Bookmark in one click</h1>
-                    <p className="features__text">
-                        Organize your bookmarks however you like. Our simple drag-and-drop interface
-                        gives you complete control over how you manage your favourite sites.
-                </p>
-                </div>
-
                 <div className="main__download download">
                     <h1 className=" download__header">Download the Extension</h1>
 
@@ -38,9 +21,9 @@ const Features = () => {
                         Please do let us know if you've got a favourite
                         you'd like us to prioritize
                 </p>
+
                 </div>
             </div>
-
         </>
     )
 
