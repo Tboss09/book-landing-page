@@ -1,4 +1,5 @@
 @import "./reset";
+@import "./variables";
 
 html {
     font-size: 10px;
@@ -7,4 +8,90 @@ html {
 body {
     font-family: "Rubik", sans-serif;
     background: grey;
+}
+
+// Header
+header {
+    max-width: 100%;
+    position: relative;
+}
+
+.header {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0px;
+    @include flex(space-between, center);
+    height: 16vh;
+    margin-top: 2vh;
+}
+
+.main {
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
+    max-width: 100%;
+    margin-top: 10vh;
+    padding: 0px;
+
+    &__header {
+        margin: 0 auto;
+        width: 90%;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 10vh;
+            background: #000;
+            height: 200px;
+            width: 300px;
+            z-index: -10000;
+            right: -3.5vh;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 75px;
+        }
+    }
+
+    &__section {
+        text-align: center;
+        margin-top: 17vh;
+
+    }
+}
+
+.title {
+    &__header {
+        font-size: 3.0rem;
+        line-height: 32px;
+        font-weight: 500;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        width: 85%;
+        margin: 0 auto;
+        line-height: 2.4rem;
+        padding-bottom: 20px;
+    }
+
+    &__btn {
+        width: 80%;
+        margin: 0 auto;
+
+        @include flex(space-between, center);
+
+        .btn {
+            background: lightblue;
+            @include flex(center, center);
+            padding: 15px;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 1.4rem;
+        }
+
+    }
+
+}
+.main__features {
+    display: none;
 }

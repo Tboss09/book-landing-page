@@ -1,3 +1,4 @@
+import Details from './Details'
 
 const Question = () => {
     return (
@@ -8,8 +9,8 @@ const Question = () => {
                     answered please feel free to email us.</p>
             </div>
 
-            <div className="details">
-            </div>
+            <Details/>
+
         </>
     )
 }

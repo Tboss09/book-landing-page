@@ -3,6 +3,7 @@ import MainHeader from './MainHeader'
 import Features from './Features'
 import Download from './Download'
 import Question from './Question'
+import StayUpdated from './StayUpdated'
 import Panel from './Panel'
 
 // Browser Images
@@ -14,10 +15,10 @@ const Main = () => {
     return (
         <main className="main">
             {/* Main Section */}
-            <Title />
             <MainHeader />
+            <Title />
             <Features />
-            <Panel/>
+            <Panel />
             <div className="download">
                 <Download browser="chrome" logo={chromeLogo} version="62" />
                 <Download browser="fireFox" logo={firefoxLogo} version="55" />
@@ -25,6 +26,7 @@ const Main = () => {
             </div>
 
             <Question />
+            <StayUpdated />
 
         </main>
     )
