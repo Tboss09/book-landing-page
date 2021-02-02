@@ -13,16 +13,6 @@ const Features = () => {
                     so you can access them on the go.
             </p>
 
-                <div className="main__download download">
-                    <h1 className=" download__header">Download the Extension</h1>
-
-                    <p className="download__title">
-                        We've got more browsers in the pipeline.
-                        Please do let us know if you've got a favourite
-                        you'd like us to prioritize
-                </p>
-
-                </div>
             </div>
         </>
     )

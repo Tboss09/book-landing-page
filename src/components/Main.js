@@ -18,6 +18,7 @@ const Main = () => {
             <MainHeader />
             <Title />
             <Features />
+
             <Panel />
             <div className="download">
                 <Download browser="chrome" logo={chromeLogo} version="62" />

@@ -15,6 +15,19 @@ const Panel = () => {
                     <li data-target="#easySharing" className="features__tabs--text">Easy Sharing</li>
                 </ul>
 
+
+                <div className="main__download download">
+                    <h1 className=" download__header">Download the Extension</h1>
+
+                    <p className="download__title">
+                        We've got more browsers in the pipeline.
+                        Please do let us know if you've got a favourite
+                        you'd like us to prioritize
+                </p>
+
+                </div>
+
+
                 {/* panel One */}
                 <div className="panel">
                     <div className="panel__img">
