@@ -10,22 +10,12 @@ const Panel = () => {
             <div className="features__tabs" id="tabbedContent">
 
                 <ul className="tabs">
-                    <li data-target="#bookmarking" className="features__tabs--text">Simple Bookmarking</li>
-                    <li data-target="#speedySearch" className="features__tabs--text">Speedy Searching</li>
-                    <li data-target="#easySharing" className="features__tabs--text">Easy Sharing</li>
+                    <li data-target="#bookmarking" className="features__tabs--text">Simple Bookmarking <div className="line"></div></li>
+                    <li data-target="#speedySearch" className="features__tabs--text">Speedy Searching <div className="line"></div></li>
+                    <li data-target="#easySharing" className="features__tabs--text">Easy Sharing <div className="line"></div></li>
+
                 </ul>
 
-
-                <div className="main__download download">
-                    <h1 className=" download__header">Download the Extension</h1>
-
-                    <p className="download__title">
-                        We've got more browsers in the pipeline.
-                        Please do let us know if you've got a favourite
-                        you'd like us to prioritize
-                </p>
-
-                </div>
 
 
                 {/* panel One */}
@@ -68,6 +58,18 @@ const Panel = () => {
                     <a href="#" className="panel__link">More Info</a>
                 </div>
             </div>
+
+            <div className="main__download download">
+                <h1 className=" download__header">Download the Extension</h1>
+
+                <p className="download__title">
+                    We've got more browsers in the pipeline.
+                    Please do let us know if you've got a favourite
+                    you'd like us to prioritize
+                </p>
+
+            </div>
+
         </>
     )
 }
