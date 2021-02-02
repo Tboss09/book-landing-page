@@ -6,14 +6,14 @@ import twitterIcon from '../images/icon-twitter.svg';
 
 
 
-const Nav = () => {
+const Nav = ({ onToggleMenu }) => {
     return (
         <>
             <div className="header__nav">
                 <nav>
                     <img src={hamBurger} alt="nav menu" />
 
-                    <div className="nav">
+                    <div className={`nav ${onToggleMenu ? `active` : ""}`}>
                         <div className="nav__header">
 
                             {/* nav Logo */}
@@ -23,7 +23,7 @@ const Nav = () => {
 
 
                             {/* Close Icon */}
-                            <div className="nav__header--close">
+                            <div className="nav__header--close" onClick={onToggleMenu}>
                                 <img src={closeIcon} alt={closeIcon} />
                             </div>
 

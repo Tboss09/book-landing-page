@@ -1,11 +1,11 @@
 import Nav from "./Nav";
 import Logo from "./Logo";
-const Header = () => {
+const Header = ({ onToggleMenu }) => {
     return (
         <header>
             <div className="header">
                 <Logo />
-                <Nav />
+                <Nav onToggleMenu={onToggleMenu} />
             </div>
         </header>
     )
