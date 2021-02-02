@@ -5,14 +5,18 @@ const StayUpdated = () => {
         <div className="stayUpdated">
 
             <div className="stayUpdated__text">
-                <h4>35,000+ already joined</h4>
-                <h1>Stay up-to-date with what we’re doing</h1>
+                <h3>35,000+ already joined</h3>
+                <h4>Stay up-to-date with what we’re doing</h4>
             </div>
 
             <div className="stayUpdated__email">
                 <form action="#">
-                    <input type="email" required placeholder="Enter Your Email Address" />
-                    <input type="submit" value="Contact Us" />
+                    <div className="email">
+                        <input type="email" required placeholder="Enter Your Email Address" />
+                    </div>
+                    <div className="submit">
+                        <button role="submit">Contact Us</button>
+                    </div>
                 </form>
             </div>
         </div>
