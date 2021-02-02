@@ -20,10 +20,10 @@ const Main = () => {
             <Features />
 
             <Panel />
-            <div className="download">
-                <Download browser="chrome" logo={chromeLogo} version="62" />
-                <Download browser="fireFox" logo={firefoxLogo} version="55" />
-                <Download browser="opera" logo={operaLogo} version="46" />
+            <div className="install">
+                <Download browser="Chrome" logo={chromeLogo} version="62" />
+                <Download browser="FireFox" logo={firefoxLogo} version="55" />
+                <Download browser="Opera" logo={operaLogo} version="46" />
             </div>
 
             <Question />
