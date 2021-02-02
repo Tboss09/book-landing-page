@@ -486,20 +486,50 @@ header {
             .email {
                 margin-bottom: 3vh;
                 position: relative;
+                transition: padding ease-in 0.3s,
+                    margin 0.3s ease;
+
 
                 &:after {
                     content: "";
-                    // border-bottom: 20px solid blue;
-                    // border: 2px solid blue;
-                    height: 1px;
-                    background: lightblue;
-                    position: absolute;
-                    width: 100%;
-                    padding: 20px;
+                    width: 0;
+                    border-radius: 0px;
+
+                    transition:
+                        width 0.4s ease-out,
+                        border-radius 0.4s ease-out;
+
+                }
+
+                &.active {
+                    margin-bottom: 9vh;
+                    padding: 4px 4px 0px 4px;
+                    transition: padding ease-out 0.3s,
+                        margin ease 0.3s;
+                    background: red;
+                    // border-radius: 5px;
+
+                    &:after {
+                        content: "Whoops, Make sure it is an email";
+                        font-size: 1.0rem;
+                        font-style: italic;
+                        color: #fff;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        font-weight: 500;
+                        right: 0;
+                        height: 28px;
+                        background: red;
+                        position: absolute;
+                        width: 100%;
+                        padding: 10px;
+                        transition: height 0.3s ease-in,
+                            width 0.4s,
+                            border-radius 0.4s ease-out;
+                    }
                 }
 
                 input {
-
                     width: 250px;
                     height: 50px;
                     font-family: inherit;
@@ -511,6 +541,7 @@ header {
             }
 
             .submit {
+
                 button {
                     width: 250px;
                     font-family: inherit;
@@ -526,6 +557,7 @@ header {
                         transform: scale(0.95);
                     }
                 }
+
             }
         }
     }
