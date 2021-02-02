@@ -185,3 +185,60 @@ header {
         }
     }
 }
+
+
+// Panels
+.panels {
+    width: 100%;
+    position: relative;
+    margin-top: 10vh;
+
+    .panel {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 10vh;
+
+        &__img {
+            margin-bottom: 15vh;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 6vh;
+            background: #000;
+            height: 200px;
+            width: 500px;
+            z-index: -10000;
+            right: 10.5vh;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 75px;
+        }
+
+        &__text {
+            text-align: center;
+
+            &--header {
+                font-size: 2.4rem;
+            }
+
+            &--desc {
+                font-size: 1.4rem;
+                width: 96%;
+                margin: 0 auto;
+                line-height: 2.2rem;
+                padding-bottom: 5vh;
+            }
+
+            &--link {
+                background: lightblue;
+                margin-top: 20vh;
+                padding: 10px 20px;
+                font-size: 1.4rem;
+            }
+        }
+
+
+    }
+}
