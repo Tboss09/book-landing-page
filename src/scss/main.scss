@@ -240,5 +240,34 @@ header {
         }
 
 
+        &:nth-of-type(2) {
+            &::before {
+                position: absolute;
+                content: "";
+                top: 10vh;
+                background: #000;
+                height: 240px;
+                width: 397px;
+                z-index: -10000;
+                right: 14.5vh;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 87px;
+            }
+        }
+
+        &:nth-of-type(2) {
+            &::before {
+                position: absolute;
+                content: "";
+                top: 12vh;
+                background: #000;
+                height: 238px;
+                width: 500px;
+                z-index: -10000;
+                right: 9.5vh;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 87px;
+            }
+        }
     }
 }
