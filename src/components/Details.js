@@ -5,24 +5,30 @@ const Details = () => {
     return (
         <div className="details">
 
-            <div className="details__one detail">
+            <div className="details__one showHide">
                 <div className="question">
-                    <h2 className="detail">What is Bookmark</h2>
-                    <img src={arrow} alt="arrowDown" />
+
+                    <div className=" question__header">
+                        <h2 >What is Bookmark</h2>
+                        <img src={arrow} alt="arrowDown" />
+                    </div>
+
+                    <div className=" question__answer">
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Fusce tincidunt
+                            justo eget ultricies fringilla.
+                            Phasellus blandit ipsum quis quam ornare mattis.
+                </p>
+
+                    </div>
                 </div>
 
-                <p className="answer">
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Fusce tincidunt
-                    justo eget ultricies fringilla.
-                    Phasellus blandit ipsum quis quam ornare mattis.
-
-                </p>
             </div>
 
-            <div className="details__one detail">
+            <div className="details__one showHide">
                 <div className="header">
-                    <h2 className="detail">How can i request a new browser</h2>
+                    <h2 className="header__question">How can i request a new browser</h2>
                     <img src={arrow} alt="arrowDown" />
                 </div>
                 < p className="answer">
@@ -33,10 +39,10 @@ const Details = () => {
                         </ p>
             </div>
 
-            <div className="details__one detail">
+            <div className="details__one showHide">
 
                 <div className="question">
-                    <h2 className="detail">Is there a mobile app?</h2>
+                    <h2 className="header__question">Is there a mobile app?</h2>
                     <img src={arrow} alt="arrowDown" />
                 </div>
 

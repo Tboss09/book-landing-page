@@ -1,3 +1,5 @@
+import dots from '../images/bg-dots.svg'
+
 const Download = ({ browser, logo, version }) => {
     return (
         <>
@@ -12,6 +14,10 @@ const Download = ({ browser, logo, version }) => {
                     <div>
                         <h1 className="header">{`Add to ${browser}`}</h1>
                         <p className="text">{`Minimum version ${version}`}</p>
+                    </div>
+
+                    <div className="dots">
+                        <img src={dots} alt="" />
                     </div>
 
                     <div className="install__extension--btn">

@@ -308,7 +308,7 @@ header {
             &--icon {
                 display: grid;
                 place-items: center;
-                padding: 40px 20px;
+                padding: 30px 0px;
                 text-align: center;
 
                 .header {
@@ -325,14 +325,102 @@ header {
             }
 
             &--btn {
-                margin-top: 20vh;
+                margin-top: 9vh;
                 width: 100%;
 
                 a {
-                    padding: 20px 40px;
+                    padding: 15px 30px;
                     background: grey;
                     font-size: 1.4rem;
+                    border-radius: 10px;
                 }
+            }
+
+            .dots {
+                margin-top: 7vh;
+            }
+        }
+    }
+}
+
+// Frequently Asked Questions
+.freqQuestion {
+    width: 100%;
+    margin-bottom: 5vh;
+
+    &__header {
+        text-align: center;
+        width: 65%;
+        margin: 0 auto;
+        line-height: 2.6rem;
+        padding-bottom: 2vh;
+        font-size: 2.4rem;
+    }
+
+    &__text {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 2.0rem;
+    }
+}
+
+// Details Section ,Open and close
+
+.details {
+    width: 100%;
+
+    &__one {
+        &:nth-of-type(1) {
+            height: 30vh;
+
+            .question {
+                @include flex(center, center);
+                flex-direction: column;
+                width: 90%;
+                margin: 0 auto;
+                background: lightblue;
+
+                &__header {
+                    width: 100%;
+                    @include flex(space-between, center);
+                    padding: 10px 20px;
+                    position: relative;
+                    border-bottom: 1px solid blue;
+
+                    h2 {
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+                }
+
+                &__answer {
+                    padding: 0px 0px;
+                    width: 80%;
+                    max-height: 0vh;
+                    overflow: hidden;
+                    transition: 0.5s padding,
+                        0.3s max-height,
+                        0.3s width;
+
+                    &.active {
+                        transition:
+                            0.3s padding,
+                            0.5s max-height,
+                            0.3s width;
+
+                        padding: 20px 0px;
+                        max-height: 100%;
+                        padding: 20px 0px;
+                    }
+
+                    p {
+                        line-height: 2.4rem;
+                        font-size: 1.6rem;
+                    }
+                }
+
             }
         }
     }
