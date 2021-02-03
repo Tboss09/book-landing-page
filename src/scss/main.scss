@@ -213,10 +213,13 @@ header {
 
 // ul.react__tabs
 .react__tabs {
-    background: lightblue;
+
     margin-bottom: 8vh;
     @include flex(center, center);
     flex-direction: column;
+
+
+
 
     &--tab {
         &:nth-of-type(1) {
@@ -234,13 +237,120 @@ header {
         background: none;
         border-color: rgba(0, 0, 0, 0.438);
         border-radius: 0px;
-        
-        
-        &::after{
-            
+        position: relative;
+
+        &:focus {
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.438);
+            outline: none;
+
+            &::after {
+                content: "";
+                position: absolute;
+                padding: 1px;
+                width: 122px;
+                top: 95%;
+                background: #000;
+                margin-left: -61px;
+                left: 50%;
+                transition: 0.4s padding,
+                    0.4s position;
+            }
+
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            padding: 1px;
+            width: 122px;
+            top: 95%;
+            background: #000;
+            margin-left: -61px;
+            left: 50%;
+            transition: 0.4s padding,
+                0.4s position;
         }
     }
 }
+
+
+// Panels
+.panels {
+    // background: lightblue;
+    width: 100%;
+
+    .panel {
+        transition: all 0.4s;
+
+        &__img {
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+            margin-bottom: 12vh;
+
+            &::before {
+                content: "";
+                background: #000;
+                padding: 10px;
+                position: absolute;
+                height: 190px;
+                width: 324px;
+                z-index: -9999;
+                right: 5vh;
+                top: 9vh;
+                border-top-right-radius: 97px;
+                border-bottom-right-radius: 97px;
+            }
+        }
+
+        &__text {
+            width: 100%;
+            text-align: center;
+
+            &--header {
+                font-size: 2.4rem;
+            }
+
+            &--desc {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                padding-bottom: 5vh;
+
+            }
+
+            &--link {
+                display: none;
+                background: lightblue;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-size: 1.4rem;
+            }
+        }
+
+
+        
+        &.two {
+        &__img {
+
+            margin-bottom: 10vh !important;
+
+            &::before {
+                content: "";
+                position: absolute ;
+                height:216px !important;
+                width: 330px !important;
+                right: 13vh !important;
+                top: 11vh !important;
+            }
+        }
+    
+        }
+    }
+
+}
+
+
 
 // Download Extension
 .main {
@@ -257,7 +367,7 @@ header {
         }
 
         &__title {
-            width: 80%;
+            width: 81%;
             margin: 0 auto;
             font-size: 1.6rem;
             line-height: 2.2rem;

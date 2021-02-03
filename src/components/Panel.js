@@ -35,7 +35,7 @@ const Panel = () => {
 
                     </TabPanel>
 
-                    <TabPanel className="panel">
+                    <TabPanel className="panel two">
 
                         <div className="panel__img">
                             <img src={TabletImage2} alt="" />
