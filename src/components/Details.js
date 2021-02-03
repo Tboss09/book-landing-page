@@ -1,19 +1,30 @@
 import arrow from '../images/icon-arrow.svg'
-import React from 'react'
+import arrowDown from '../images/icon-up.svg'
+import { useState } from 'react'
 
 const Details = () => {
+
+    const [detail, setDetail] = useState(false);
+    const [detailTwo, setDetailTwo] = useState(false);
+    const [detailThree, setDetailThree] = useState(false);
+    const [detailFour, setDetailFour] = useState(false);
+
+
+    // const [detailTwo, setDetailTwo] = useState(false);
+    // const [detailThree, setDetailThree] = useState(false);
+
     return (
         <div className="details">
 
-            <div className="details__one showHide">
+            <div className="details__one showHide" onClick={() => setDetail(!detail)}>
 
-                <div className="question">
+                <div className="question" >
                     <div className=" question__header">
                         <h2 >What is Bookmark</h2>
-                        <img src={arrow} alt="arrowDown" />
+                        <img src={detail ? arrowDown : arrow} alt="arrowDown" />
                     </div>
 
-                    <div className=" question__answer">
+                    <div className={`question__answer ${detail ? "active" : ''}`}>
                         <p>
                             Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit. Fusce tincidunt
@@ -26,63 +37,82 @@ const Details = () => {
 
             </div>
 
-            <div className="details__one showHide">
-                <div className="question">
-
-                    <div className="question__header">
-                        <h2 className="header__question">How can i request a new browser</h2>
-                        <img src={arrow} alt="arrowDown" />
-                    </div>
-
-                    < p className="question__answer">
-                        Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
-                        Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-                        ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
-                        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-                        </ p>
-                </div>
-            </div>
-
-
-            <div className="details__one showHide">
+            <div className="details__one showHide" onClick={() => setDetailTwo(!detailTwo)}>
 
                 <div className="question">
-                    <div className="question__header">
-                        <h2>Is there a mobile app?</h2>
-                        <img src={arrow} alt="arrowDown" />
+                    <div className="question__header ">
+                        <h2 >How can I request a new browser?</h2>
+                        <img src={detailTwo ? arrowDown : arrow} alt={detailTwo ? arrowDown : arrow} />
                     </div>
-                </div>
 
-                <p className="question__answer">
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Fusce tincidunt
-                    justo eget ultricies fringilla.
-                    Phasellus blandit ipsum quis quam ornare mattis.
+                    <div className={`question__answer ${detailTwo ? "active" : ""}`}>
+                        <p>
+                            Vivamus luctus eros aliquet convallis ultricies.
+                            Mauris augue massa, ultricies non ligula.
+                            Suspendisse imperdiet.
+                            Vivamus luctus eros
+                            aliquet convallis ultricies.
+                            Mauris augue massa,
+                            ultricies non ligula.
+                            Suspendisse imperdie tVivamus luctus
+                            eros aliquet convallis ultricies.
+                            Mauris augue massa, ultricies non ligula.
+                            Suspendisse imperdiet.
 
                 </p>
-            </div>
 
-            <div className="details__one showHide">
-
-                <div className="question">
-                    <div className="question__header">
-                        <h2>What about Other Chromium browsers</h2>
-                        <img src={arrow} alt="arrowDown" />
                     </div>
                 </div>
 
-                <p className="question__answer">
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Fusce tincidunt
-                    justo eget ultricies fringilla.
-                    Phasellus blandit ipsum quis quam ornare mattis.
+            </div>
+
+            <div className="details__one showHide" onClick={() => setDetailThree(!detailThree)}>
+
+                <div className="question">
+                    <div className=" question__header">
+                        <h2 >  Is there a mobile app?</h2>
+                        <img src={detailThree ? arrowDown : arrow} alt="arrowDown" />
+                    </div>
+
+                    <div className={`question__answer ${detailThree ? "active" : ''}`}>
+                        <p>
+
+                            Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+                            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+                            sollicitudin ex et ultricies bibendum.
 
                 </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div className="details__one showHide" onClick={() => setDetailFour(!detailFour)}>
+
+                <div className="question">
+                    <div className=" question__header">
+                        <h2 >  What about other Chromium browsers?
+</h2>
+                        <img src={detailFour? arrowDown : arrow}alt="arrowDown" />
+                    </div>
+
+                    <div className={`question__answer ${detailFour ? "active" : ''}`}>
+                        <p>
+
+                            Integer condimentum ipsum id imperdiet finibus.
+                            Vivamus in placerat mi, at euismod dui. Aliquam
+                            vitae neque eget nisl gravida pellentesque non ut velit.
+                </p>
+
+                    </div>
+                </div>
+
             </div>
 
 
             <div className="infoButton">
-                <a href="#"  className="infoButton__link ">More Info</a>
+                <a href="#" className="infoButton__link ">More Info</a>
             </div>
         </div >
     )

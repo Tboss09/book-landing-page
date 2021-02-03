@@ -50,7 +50,7 @@ const Panel = () => {
 
                     </TabPanel>
 
-                    <TabPanel className="panel">
+                    <TabPanel className="panel three">
                         <div className="panel__img">
                             <img src={PeopleInTabletImage} alt="" />
                         </div>
