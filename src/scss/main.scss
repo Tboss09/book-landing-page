@@ -329,28 +329,29 @@ header {
         }
 
 
+
         
-        &.two {
-        &__img {
-
-            margin-bottom: 10vh !important;
-
-            &::before {
-                content: "";
-                position: absolute ;
-                height:216px !important;
-                width: 330px !important;
-                right: 13vh !important;
-                top: 11vh !important;
-            }
-        }
-    
-        }
     }
 
 }
 
-
+.two{
+    .panel__img{
+        &::before{
+               content: "";
+               background: #000;
+               padding: 10px;
+               position: absolute;
+               height: 190px;
+               width: 324px;
+               z-index: -9999;
+               right: 5vh;
+               top: 9vh;
+               border-top-right-radius: 97px;
+               border-bottom-right-radius: 97px;
+        }
+    }
+}
 
 // Download Extension
 .main {
