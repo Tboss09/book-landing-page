@@ -112,7 +112,7 @@ const Details = () => {
 
 
             <div className="infoButton">
-                <a href="#" className="infoButton__link ">More Info</a>
+                <a href="#home" className="infoButton__link ">More Info</a>
             </div>
         </div >
     )

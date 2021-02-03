@@ -43,19 +43,19 @@ const Nav = () => {
                         <div className="nav__links">
                             <ul className="links">
                                 <li>
-                                    <a href="#">Features</a>
+                                    <a href="#home">Features</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Pricing</a>
+                                    <a href="#home">Pricing</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Contact</a>
+                                    <a href="#home">Contact</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Login</a>
+                                    <a href="#home">Login</a>
                                 </li>
 
                             </ul>

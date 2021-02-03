@@ -11,8 +11,8 @@ const Title = () => {
                  Try it for free</p>
 
                     <div className=" title__btn">
-                        <a href="#" className="title__btn--blue btn">Get it on Chrome</a>
-                        <a href="#" className="title__btn--white btn">Get it on FireFox</a>
+                        <a href="#home" className="title__btn--blue btn">Get it on Chrome</a>
+                        <a href="#home" className="title__btn--white btn">Get it on FireFox</a>
                     </div>
 
                 </div>
