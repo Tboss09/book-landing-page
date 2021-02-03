@@ -5,7 +5,7 @@ const Header = ({ onToggleMenu }) => {
         <header>
             <div className="header">
                 <Logo />
-                <Nav onToggleMenu={onToggleMenu} />
+                <Nav onToggle={onToggleMenu} />
             </div>
         </header>
     )

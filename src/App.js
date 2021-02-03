@@ -8,15 +8,12 @@ import Main from './components/Main'
 import Footer from './components/Footer'
 
 const App = () => {
-  const [menu, setMenu] = useState(true);
+  // const [menuState, setMenuState] = useState(true);
   // TO Toggle Menu 
 
-  function getError(){
-    setMenu(!menu)
-  }
   return (
     <>
-      <Header onToggleMenu={getError } />
+      <Header />
       <Main />
       <Footer />
     </>

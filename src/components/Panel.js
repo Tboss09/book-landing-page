@@ -1,3 +1,9 @@
+
+//  REact Components
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+
+
 import TabletImage from '../images/illustration-features-tab-1.svg'
 import TabletImage2 from '../images/illustration-features-tab-2.svg'
 import PeopleInTabletImage from '../images/illustration-features-tab-3.svg'
@@ -20,7 +26,7 @@ const Panel = () => {
 
                 {/* panel One */}
                 <div className="panels">
-                    <div className="panel">
+                    <div className="panel active" id="bookmarking">
                         <div className="panel__img">
                             <img src={TabletImage} alt={`${TabletImage} img`} />
                         </div>
@@ -35,7 +41,7 @@ const Panel = () => {
                     </div>
 
                     {/* panel Three */}
-                    <div className="panel">
+                    <div className="panel" id="speedySearch">
                         <div className="panel__img">
                             <img src={TabletImage2} alt="" />
                         </div>
@@ -51,7 +57,7 @@ const Panel = () => {
 
 
                     {/* panel Three */}
-                    <div className="panel">
+                    <div className="panel" id="easySharing">
                         <div className="panel__img">
                             <img src={PeopleInTabletImage} alt="" />
                         </div>

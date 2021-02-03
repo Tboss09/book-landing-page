@@ -1,19 +1,29 @@
+// Icons 
 import hamBurger from '../images/icon-hamburger.svg';
 import logo from '../images/logo-bookmark.svg';
 import closeIcon from '../images/icon-close.svg';
 import facebookIcon from '../images/icon-facebook.svg';
 import twitterIcon from '../images/icon-twitter.svg';
 
+// React Components
+import { useState } from 'react';
 
 
-const Nav = ({ onToggleMenu }) => {
+
+const Nav = () => {
+    const [menuState, setMenuState] = useState(false);
+    
+    
     return (
         <>
             <div className="header__nav">
                 <nav>
-                    <img src={hamBurger} alt="nav menu" />
+                    <div onClick={() => setMenuState(!menuState)}>  
+                        <img src={hamBurger} alt="nav menu" />
+                    </div>
 
-                    <div className={`nav ${onToggleMenu ? `active` : ""}`}>
+                    <div className={`nav ${menuState ? 'active' : ""} `}>
+
                         <div className="nav__header">
 
                             {/* nav Logo */}
@@ -23,7 +33,7 @@ const Nav = ({ onToggleMenu }) => {
 
 
                             {/* Close Icon */}
-                            <div className="nav__header--close" onClick={onToggleMenu}>
+                            <div className="nav__header--close " onClick={() => setMenuState(!menuState)}  >
                                 <img src={closeIcon} alt={closeIcon} />
                             </div>
 

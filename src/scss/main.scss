@@ -283,8 +283,13 @@ header {
     .panel {
         width: 80%;
         margin: 0 auto;
+        display: none;
         position: relative;
         margin-bottom: 10vh;
+
+        &.active {
+            display: block;
+        }
 
         &__img {
             margin-bottom: 13vh;
