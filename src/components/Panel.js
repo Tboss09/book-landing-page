@@ -13,20 +13,16 @@ const Panel = () => {
     return (
         <>
 
-            <div className="features__tabs" id="tabbedContent">
+            <Tabs className="features__tabs">
+                <TabList className="react__tabs">
+                    <Tab className="react__tabs--tab">Simple Bookmarking</Tab>
+                    <Tab className="react__tabs--tab">Speedy Searching</Tab>
+                    <Tab className="react__tabs--tab">Easy Sharing</Tab>
+                </TabList>
 
-                <ul className="tabs">
-                    <li data-target="#bookmarking" className="features__tabs--text">Simple Bookmarking <div className="line"></div></li>
-                    <li data-target="#speedySearch" className="features__tabs--text">Speedy Searching <div className="line"></div></li>
-                    <li data-target="#easySharing" className="features__tabs--text">Easy Sharing <div className="line"></div></li>
-
-                </ul>
-
-
-
-                {/* panel One */}
                 <div className="panels">
-                    <div className="panel active" id="bookmarking">
+
+                    <TabPanel className="panel ">
                         <div className="panel__img">
                             <img src={TabletImage} alt={`${TabletImage} img`} />
                         </div>
@@ -38,10 +34,10 @@ const Panel = () => {
                             <a href="#" className="panel__text--link">More Info</a>
                         </div>
 
-                    </div>
+                    </TabPanel>
 
-                    {/* panel Three */}
-                    <div className="panel" id="speedySearch">
+                    <TabPanel className="panel">
+
                         <div className="panel__img">
                             <img src={TabletImage2} alt="" />
                         </div>
@@ -53,11 +49,9 @@ const Panel = () => {
                             <a href="#" className="panel__text--link">More Info</a>
                         </div>
 
-                    </div>
+                    </TabPanel>
 
-
-                    {/* panel Three */}
-                    <div className="panel" id="easySharing">
+                    <TabPanel className="panel">
                         <div className="panel__img">
                             <img src={PeopleInTabletImage} alt="" />
                         </div>
@@ -71,9 +65,15 @@ const Panel = () => {
                         </p>
                             <a href="#" className="panel__text--link">More Info</a>
                         </div>
-                    </div>
+
+                    </TabPanel>
                 </div>
-            </div>
+
+
+
+            </Tabs>
+
+
 
             <div className="main__download download">
                 <h1 className=" download__header">Download the Extension</h1>

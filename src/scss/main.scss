@@ -129,7 +129,7 @@ header {
             position: absolute;
             content: "";
             top: 10vh;
-            background: #000;
+            background: green;
             height: 200px;
             width: 300px;
             z-index: -10000;
@@ -208,68 +208,70 @@ header {
         @include flex(center, center);
         flex-direction: column;
 
+
+
         .tabs {
             margin-top: 5vh;
             width: 100%;
         }
 
-        &--text {
-            font-size: 1.6rem;
-            text-align: center;
-            line-height: 3.2rem;
-            padding-bottom: 4vh;
-            position: relative;
-            width: 85%;
-            margin: 0 auto;
+        // &--text {
+        //     font-size: 1.6rem;
+        //     text-align: center;
+        //     line-height: 3.2rem;
+        //     padding-bottom: 4vh;
+        //     position: relative;
+        //     width: 85%;
+        //     margin: 0 auto;
 
-            &::before {
-                content: "";
-                // padding: px;
-                height: .5px;
-                width: 100%;
-                background: #000;
-                position: absolute;
-                top: -20%;
-                right: 0;
-                left: 0;
-            }
+        //     &::before {
+        //         content: "";
+        //         // padding: px;
+        //         height: .5px;
+        //         width: 100%;
+        //         background: #000;
+        //         position: absolute;
+        //         top: -20%;
+        //         right: 0;
+        //         left: 0;
+        //     }
 
-            &:nth-of-type(3) {
-                &::after {
-                    content: "";
-                    // padding: px;
-                    height: .5px;
-                    width: 100%;
-                    background: #000;
-                    position: absolute;
-                    top: 70%;
-                    right: 0;
-                    left: 0;
-                }
-            }
+        //     &:nth-of-type(3) {
+        //         &::after {
+        //             content: "";
+        //             // padding: px;
+        //             height: .5px;
+        //             width: 100%;
+        //             background: #000;
+        //             position: absolute;
+        //             top: 70%;
+        //             right: 0;
+        //             left: 0;
+        //         }
+        //     }
 
-            .line {
-                background: #000;
-                width: 0px;
-                height: 2px;
-                position: absolute;
-                left: 50%;
-                margin-left: -70px;
-                transition: 0.3s width,
-                    0.4s opacity;
-                top: 73%;
-                padding: 0;
-                opacity: 0;
+        //     .line {
+        //         background: #000;
+        //         width: 0px;
+        //         height: 2px;
+        //         position: absolute;
+        //         left: 50%;
+        //         margin-left: -70px;
+        //         transition: 0.3s width,
+        //             0.4s opacity;
+        //         top: 73%;
+        //         padding: 0;
+        //         opacity: 0;
 
-                &.active {
-                    width: 140px;
-                    opacity: 1;
-                    padding: 0;
-                    transition: 0.4s width,
-                        0.3s opacity;
-                }
-            }
-        }
+        //         &.active {
+        //             width: 140px;
+        //             opacity: 1;
+        //             padding: 0;
+        //             transition: 0.4s width,
+        //                 0.3s opacity;
+        //         }
+        //     }
+        // }
     }
 }
 
@@ -283,13 +285,10 @@ header {
     .panel {
         width: 80%;
         margin: 0 auto;
-        display: none;
+        // display: none;
         position: relative;
         margin-bottom: 10vh;
 
-        &.active {
-            display: block;
-        }
 
         &__img {
             margin-bottom: 13vh;
@@ -299,7 +298,7 @@ header {
             position: absolute;
             content: "";
             top: 6vh;
-            background: #000;
+            background:green;
             height: 200px;
             width: 500px;
             z-index: -10000;
@@ -332,35 +331,35 @@ header {
         }
 
 
-        &:nth-of-type(2) {
-            &::before {
-                position: absolute;
-                content: "";
-                top: 10vh;
-                background: #000;
-                height: 240px;
-                width: 397px;
-                z-index: -10000;
-                right: 14.5vh;
-                border-top-right-radius: 30px;
-                border-bottom-right-radius: 87px;
-            }
-        }
+        // &:nth-of-type(2) {
+        //     &::before {
+        //         position: absolute;
+        //         content: "";
+        //         top: 10vh;
+        //         background: green;
+        //         height: 240px;
+        //         width: 397px;
+        //         z-index: -10000;
+        //         right: 14.5vh;
+        //         border-top-right-radius: 30px;
+        //         border-bottom-right-radius: 87px;
+        //     }
+        // }
 
-        &:nth-of-type(3) {
-            &::before {
-                position: absolute;
-                content: "";
-                top: 11vh;
-                background: #000;
-                height: 238px;
-                width: 500px;
-                z-index: -10000;
-                right: 9.5vh;
-                border-top-right-radius: 30px;
-                border-bottom-right-radius: 87px;
-            }
-        }
+        // &:nth-of-type(3) {
+        //     &::before {
+        //         position: absolute;
+        //         content: "";
+        //         top: 11vh;
+        //         background: #000;
+        //         height: 238px;
+        //         width: 500px;
+        //         z-index: -10000;
+        //         right: 9.5vh;
+        //         border-top-right-radius: 30px;
+        //         border-bottom-right-radius: 87px;
+        //     }
+        // }
     }
 }
 
