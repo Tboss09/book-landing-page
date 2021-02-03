@@ -21,7 +21,7 @@ const Download = ({ browser, logo, version }) => {
                     </div>
 
                     <div className="install__extension--btn">
-                        <a href="#"> Add & Install Extension</a>
+                        <a href="#home"> Add & Install Extension</a>
                     </div>
                 </div>
             </div>

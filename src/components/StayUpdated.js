@@ -15,7 +15,7 @@ const StayUpdated = () => {
                         <input type="email" required placeholder="Enter Your Email Address" />
                     </div>
                     <div className="submit">
-                        <button role="submit">Contact Us</button>
+                        <button >Contact Us</button>
                     </div>
                 </form>
             </div>
