@@ -12,7 +12,6 @@ import PeopleInTabletImage from '../images/illustration-features-tab-3.svg'
 const Panel = () => {
     return (
         <>
-
             <Tabs className="features__tabs">
                 <TabList className="react__tabs">
                     <Tab className="react__tabs--tab">Simple Bookmarking</Tab>
